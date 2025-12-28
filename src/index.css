@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --primary: 263 70% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 173 80% 40%;
+    /* Neon Teal/Green */
+    --accent-foreground: 222 47% 11%;
+
+    --card: 217 32% 17%;
+    --card-foreground: 210 40% 98%;
+
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+    /* Light Gray */
+
+    --radius: 0.75rem;
+  }
+
+  /* LIGHT THEME */
+  .light {
+    --background: 210 20% 98%;
+    /* Off-White Background */
+    --foreground: 222 47% 11%;
+    /* Dark Text */
+
+    --primary: 263 70% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 20% 94%;
+    /* Slightly darker gray for secondary */
+    --secondary-foreground: 222 47% 11%;
+
+    --accent: 173 80% 40%;
+    --accent-foreground: 210 40% 98%;
+
+    --card: 0 0% 100%;
+    /* Pure White Cards */
+    --card-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    /* Dark Gray/Slate-600 */
+  }
+
+  /* CYBER THEME (Yellow/Pink Neon) */
+  .cyber {
+    --background: 240 10% 4%;
+    /* Very Dark Blue */
+    --foreground: 60 30% 96%;
+
+    --primary: 320 100% 55%;
+    /* Neon Pink */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 260 50% 15%;
+    --secondary-foreground: 60 30% 96%;
+
+    --accent: 60 100% 50%;
+    /* Neon Yellow */
+    --accent-foreground: 0 0% 0%;
+
+    --card: 260 50% 10%;
+    --card-foreground: 60 30% 96%;
+
+    --muted: 260 50% 15%;
+    --muted-foreground: 60 20% 80%;
+  }
+
+  /* Glowing effects */
+  .glow-text {
+    text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+  }
+}
+
+body {
+  @apply bg-background text-foreground tracking-wide;
+}
