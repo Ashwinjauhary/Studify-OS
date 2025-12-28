@@ -23,8 +23,8 @@ const LandingPage = () => {
             <nav className="fixed top-0 w-full z-50 backdrop-blur-lg border-b border-white/5 bg-background/50">
                 <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                        <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-accent flex items-center justify-center">
-                            <span className="font-bold text-white text-xl">S</span>
+                        <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-accent flex items-center justify-center overflow-hidden">
+                            <img src="/logo.png" alt="Studify Logo" className="w-full h-full object-cover" />
                         </div>
                         <span className="font-bold text-xl tracking-tight hidden md:block">Studify OS</span>
                     </div>
